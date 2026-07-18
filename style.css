@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 375px;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+
+.icon {
+    width: 5.5vw;
+    height: auto;
+    margin: 0.5vw;
+}
+
+header {
+    background-color: #f8f9fa;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    z-index:;
+    gap: 0.5;
+}
+
+#logo-box {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    order: 1;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 5svw;
+    cursor: pointer;
+    order: ;
+    color: #000;
+    margin: 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 5svw;
+    cursor: pointer;
+    font-weight: 600;
+    order: ;
+    float: left;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+
+#nav-menu {
+    display: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    order: 3;
+    width: 100%;
+}
+
+#nav-menu.active {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    white-space: nowrap;
+    order: 4;
+    font-size: 3svw;
+    float: right;
+    justify-content: space-around;
+}
+
+.bookmark {
+    display: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #f8f9fa;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.signin {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: black;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+main {
+    padding: 1.2vw;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #b7ceda;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.search-box {
+    width: 90%;
+    max-width: 500px;
+    padding: 0.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    font-size: 3svw;
+    margin: 0rem;
+    color: hsl(220, 78%, 28%);
+}
+
+#search-bar {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 4svw;
+    background: transparent;
+    padding: 0 0.5rem;
+}
+
+.search-button {
+    background-color: rgb(35, 99, 236);
+    color: #ffffff;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 2vw 3vw;
+    cursor: pointer;
+    font-size: 3svw;
+}
+
+#trending {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #000;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.trending-content {
+    padding: 0.4rem 0.75rem;
+    background-color: #f8f9fa;
+    border: 1px solid rgb(192, 195, 202);
+    border-radius: 20px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+#popular-website {
+    margin: 1.5rem;
+}
+
+#card-box {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem 0rem;
+}
+
+.card {
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 1px 4px hsl(221, 10%, 61%);
+    flex: 1;
+    min-width: 247px;
+    max-width: 500px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+}
+
+card a, card a:visited, .trending-content a, .trending-content a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
+}
+
+card img {
+    width: 3rem;
+    height: auto;
+}
+
+card span {
+    display: block;
+    font-size: 0.7rem;
+    color: #000;
+} 
+
+#category-box {
+    margin: 1.5rem;
+}
+
+#category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section  figure {
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    background-color: rgba(207, 145, 231, 0.2);
+    padding: 1rem;
+    display: inline-block;
+    margin: 0rem;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#tab-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 1.5rem;
+    gap: 1rem;
+}
+
+.tabs {
+    margin: 0;
+    flex: 1;
+    min-width: 250px;
+    padding: 0.5rem 1.5rem 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 1px 1px 6px 1px hsl(221, 10%, 61%);
+}
+
+h3 {
+    line-height: 0.2rem;
+}
+
+#tab-1 > div {
+    justify-content:space-between;
+}
+
+.tab-1-list {
+    border: 2px solid black;
+    margin:;
+    justify-content: space-around;
+    text-align: justify;
+    display: block;
+}
+
+.new-button, .new-button:visited, .new-button:active, .new-button a:visited, .new-button a:active, .new-button a {
+    float: right;
+    border-radius: 0.75rem;
+    border: none;
+    padding: 0.15rem 0.4rem;
+    background-color: rgb(184, 202, 241);
+    color: rgb(35, 99, 236);
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-decoration-style: none;
+}
+
+#tab-2 {
+    background-color: rgb(201, 224, 243);
+    font-size: 1rem;
+    line-height: normal;
+    padding: 1rem;
+}
+
+#tab-2 p {
+    font-size: 1rem;
+    margin-top: 0 0 4rem 0;
+}
+
+#tab-2 button {
+    background-color: rgb(35, 99, 236);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+#subscribe-box {
+    width: 30%;
+    max-width: 500px;
+    padding: 0.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#subscribe-bar {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    background: transparent;
+    padding: 0 0.5rem;
+}
+
+#subscribe-button {
+    background-color: rgb(35, 99, 236);
+    color: #ffffff;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Tablet screens (768px and up) */
+/*@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    header {
+        padding: 0.75rem 2rem;
+        gap: 2rem;
+        flex-wrap: nowrap;
+        max-height: 4rem;
+    }
+
+    #logo {
+        font-size: 1.2rem;
+        order: 1;
+        gap: 0;
+    }
+
+    #nav-menu {
+        display: flex;
+        order: 2;
+        width: auto;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    li {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+    }
+
+    #profile {
+        order: 3;
+    }
+
+    .bookmark,
+    .signin {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .search-box {
+        width: 70%;
+        max-width: 600px;
+    }
+
+    .card {
+        max-width: 180px;
+    }
+
+    .tabs {
+        min-width: auto;
+    }
+}
+
+/* Desktop screens (1024px and up) */
+/*@media (min-width: 1024px) {
+    header {
+        padding: 0.75rem 3rem;
+        gap: 3rem;
+    }
+
+    #logo {
+        font-size: 1.75rem;
+    }
+
+    li {
+        font-size: 1.1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .search-box {
+        width: 50%;
+        max-width: 700px;
+    }
+
+    .card {
+        max-width: 200px;
+    }
+
+    .tabs {
+        width: 33%;
+        min-width: auto;
+    }
+}
+
+/* Large desktop screens (1440px and up) */
+/*@media (min-width: 1440px) {
+    html {
+        font-size: 18px;
+    }
+}
+*/
