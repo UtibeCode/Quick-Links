@@ -3,7 +3,7 @@
 }
 
 html {
-    width: 375px;
+    width: 430px;
     font-size: 16px;
 }
 
@@ -203,14 +203,14 @@ p {
 }
 
 .card {
-    padding: 1.5rem;
+    padding: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     border-radius: 0.5rem;
     box-shadow: 0.5px 1px 4px hsl(221, 10%, 61%);
     flex: 1;
-    min-width: 247px;
+    min-width: 30%;
     max-width: 500px;
     background-color: #fff;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -237,6 +237,7 @@ card span {
     display: block;
     font-size: 0.7rem;
     color: #000;
+    display: none;
 } 
 
 #category-box {
@@ -288,7 +289,6 @@ h3 {
 }
 
 .tab-1-list {
-    border: 2px solid black;
     margin:;
     justify-content: space-around;
     text-align: justify;

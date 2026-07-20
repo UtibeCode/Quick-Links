@@ -13,7 +13,7 @@
     <body>
         <header id="heading">
             <span id="logo-box">
-                <button id="menu-toggle" class="menu-toggle" onclick="myNav-menu()">☰</button>
+                <button id="menu-toggle" class="menu-toggle" onclick="myNavmenu()">☰</button>
 
                 <span id="logo"><img src="/Images/Icon.png" alt="icon" class="icon"> Quick Links</span>
             </span>
@@ -28,8 +28,9 @@
             </ul>
 
 <script>
-    function myNav-menu() {
-        getDocumentById
+    function myNavmenu() {
+        document.getElementById("nav-menu");
+        navMenu.style.visibility = myNav-menu ? "visible" : "hidden";
     }
 </script>
 
@@ -79,59 +80,59 @@
                 <b style="float:right; font-size: 1rem;"> view all </b>
             </h2>
             <div id="card-box">
-                <card class="card">
+                <card class="card" title="Search the world's information">
                     <a href="https://google.com/" target="_blank">
-                        <img src="/Images/google.png" width="48px" height="48px" alt="google" />
+                        <img src="/Images/google.png" width="24px" height="24px" alt="google" />
                         <br>Google
                         <span>Search the world's information</span>
                     </a>
                 </card>
-                <card class="card">
+                <card class="card" title="Watch, Upload and Share Videos">
                     <a href="https://youtube.com/" target="_blank">
-                        <img width="48" height="48" src="/Images/youtube.png" alt="youtube-play"/>
+                        <img width="24" height="24" src="/Images/youtube.png" alt="youtube-play"/>
                         <br>Youtube
                         <span>Watch, Upload and Share Videos</span>
                     </a>
                 </card>
-                </card>
-                <card class="card">
+                <card class="card" title="Connect with Friends and the World">
                     <a href="https://facebook.com/" target="_blank">
-                        <img width="48" height="48" src="/Images/facebook.png" alt="facebook"/>
+                        <img width="24" height="24" src="/Images/facebook.png" alt="facebook"/>
                         <br>Facebook
                         <span>Connect with Friends and the World</span>
                     </a>
                 </card>
-                <card class="card">
+                <card class="card" title="Share your Photos and Videos">
                     <a href="https://instagram.com/" target="_blank">
-                        <img width="48" height="48" src="/Images/instagram.png" alt="instagram"/>
+                        <img width="24" height="24" src="/Images/instagram.png" alt="instagram"/>
                         <br>Instagram
-                        <span> Share your Photos and Videos</span>
+                        <span>Share your Photos and Videos</span>
                     </a>
                 </card>
-                <card class="card">
+                <card class="card" title="Stay Updated with what's Happening">
                     <a href="https://x.com/" target="_blank">
-                        <img src="/Images/twitter.png" width="48" height="48" alt="X(twitter)"/>
+                        <img src="/Images/twitter.png" width="24" height="24" alt="X(twitter)"/>
                         <br>X(Twitter)
                         <span>Stay Updated with what's Happening</span>
                     </a>
                 </card>
-                <card class="card">
+                <card class="card" title="Message Privately with Friends and Family">
                     <a href="https://whatsapp.com/" target="_blank">
-                        <img src="/Images/whatsapp.png" width="48" height="48" alt="whatsapp"/>
+                        <img src="/Images/whatsapp.png" width="24" height="24" alt="whatsapp"/>
                         <br>Whatsapp
-                        <span>Message Privately with Friends and Family</span>
+                        <span>Message Privately with Friends and Family
+                        </span>
                     </a>
                 </card>
-                <card class="card">
+                <card class="card" title="Shop millions of products online">
                     <a href="https://amazon.com/" target="_blank">
-                        <img src="/Images/amazon.png" width="48" height="48" alt="amazon"/>
+                        <img src="/Images/amazon.png" width="24" height="24" alt="amazon"/>
                         <br>Amazon
                         <span>Shop millions of products online</span>
                     </a>
                 </card>
-                <card class="card">
+                <card class="card" title="Watch movies and Tv shows">
                     <a href="https://netflix.com/" target="_blank">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB0klEQVR4nK3Vu0okQRQG4Immq6eq+tQpWE2EBVHBp1DwEcwNzBZMTAxWVw2NfAoDkWpF8AZextkLgrI6uq6K2F0GKogmmigIjpQy0lO2MJcqqOjQ/fX5u/p0JpOy9qkc1FyWkvucyd5yfcYL2kICpeRWJBjJVLtmiRjRDO+SQMxRlesqy9ttICTBj6qB0IPxIyp+W8BDhAjOgI2c2LFjirnse+0wyzsaBhSBp5jjTQXA5LIzwFx0SLFgdfB0Rpub0gBFgtGagVU/KNoxaYbfnAGKwHPM8MJCCs4As4sUN62YnrcodKcAY3UBK744smM65mLCGRASKEUMdRKIGB58OEUejNcNFJnI210s+EI762DJF5EN7OYw7wwITUwcK95FxPDMKfCf4aTdxQqBk7qOqXkaG/hJoccc0SRgjrAzYDbLOmMm/1gxXZqPseZZ9BkQBXLAjmnNh4N6gNE04JSxL2bgJYF/OSw4AVSWt5ua5rhqjfBbM9pr+mWmAh60vgGy345p3Rd/GweI+PoKAAjN5WNFTBR/KRIMNwSEvmwp12OOc5Ux4f08waGqgZAE35UHV8qD7ZDAovJgai4D4h1goktzOR1zzMdcHmqO13tUDqTd7AUgThtKnifY7wAAAABJRU5ErkJggg==" alt="netflix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB0klEQVR4nK3Vu0okQRQG4Immq6eq+tQpWE2EBVHBp1DwEcwNzBZMTAxWVw2NfAoDkWpF8AZextkLgrI6uq6K2F0GKogmmigIjpQy0lO2MJcqqOjQ/fX5u/p0JpOy9qkc1FyWkvucyd5yfcYL2kICpeRWJBjJVLtmiRjRDO+SQMxRlesqy9ttICTBj6qB0IPxIyp+W8BDhAjOgI2c2LFjirnse+0wyzsaBhSBp5jjTQXA5LIzwFx0SLFgdfB0Rpub0gBFgtGagVU/KNoxaYbfnAGKwHPM8MJCCs4As4sUN62YnrcodKcAY3UBK744smM65mLCGRASKEUMdRKIGB58OEUejNcNFJnI210s+EI762DJF5EN7OYw7wwITUwcK95FxPDMKfCf4aTdxQqBk7qOqXkaG/hJoccc0SRgjrAzYDbLOmMm/1gxXZqPseZZ9BkQBXLAjmnNh4N6gNE04JSxL2bgJYF/OSw4AVSWt5ua5rhqjfBbM9pr+mWmAh60vgGy345p3Rd/GweI+PoKAAjN5WNFTBR/KRIMNwSEvmwp12OOc5Ux4f08waGqgZAE35UHV8qD7ZDAovJgai4D4h1goktzOR1zzMdcHmqO13tUDqTd7AUgThtKnifY7wAAAABJRU5ErkJggg==" alt="netflix" width="24" height="24">
                         <br>Netflix
                         <span>Watch movies and Tv shows</span>
                     </a>
@@ -139,14 +140,14 @@
                 <card class="card">
                     <a href="https://linkedin.com/" target="_blank">
                         <img src="/Images/linkedin.png" width="48" heigth="48" alt="linkedIn" />
-                        <br>LinkedIn
+                        <br title="Connect, learn and grow your career">LinkedIn
                         <span>Connect, learn and grow your career</span>
                     </a>
                 </card>
                 <card class="card">
                     <a href="https://wikipedia.org/" target="_blank">
                         <img src="/Images/wikipedia.png" width="48" height="48" alt="wikiedia" />
-                        <br>Wikipedia
+                        <br title="The free enclyclopedia that anyone can edit">Wikipedia
                         <span>The free enclyclopedia that anyone can edit</span>
                     </a>
                 </card>
